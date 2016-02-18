@@ -1,0 +1,70 @@
+﻿// this file is interface css.
+
+// - fonts
+@import "../fonts/pfdin/stylesheet.css"
+
+// - var
+@import "variables.styl"
+
+//-
+@import "/layout/header.styl"
+@import "/layout/anckers.styl"
+@import "/layout/map.styl"
+@import "/layout/footer.styl"
+@import "/layout/modal.styl"
+@import "../element/css-blocks/b_main_first_block.styl"
+
+
+*
+    margin 0
+    padding 0
+    outline 0
+
+html,
+body
+    height 100%
+body
+    padding-top 240px
+a:hover,
+a:focus
+    outline 0
+
+.wrapper
+    min-width $screenMinWidth
+    width $screenMinWidth
+    margin 0 auto
+.container
+    min-width 100%
+    max-width 100%
+.blue
+    color $colorBlue
+.btn
+    background-color $colorBlue
+    color #fff
+    padding 15px 30px
+    text-transform uppercase
+    font-family 'pfdintextcomppro-bold'
+    font-size 18px
+    &:hover,
+    &:focus
+        color inherit
+        text-decoration underline
+.sert
+    font-family 'Open Sans'
+    font-size 12px
+    line-height 16px
+    color $colorBlue
+    text-decoration underline
+    padding-left 65px
+    position relative
+    display block
+    margin-top 25px
+    &:before
+        content ''
+        display block
+        width 34px
+        height 39px
+        background url($pathImg + 'sert-icon.png') no-repeat center center
+        position absolute
+        left 0px
+        top 0px

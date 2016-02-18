@@ -1,0 +1,213 @@
+﻿@import "variables.styl"
+
+.content
+    min-height 800px
+    min-width 100%
+    &__block
+        width 100%
+        min-width $screenMinWidth
+        position relative
+    &__doc
+        width 100%
+        min-width $screenMinWidth
+        position relative
+        min-height 485px
+        background url($pathImg + 'main-bg.png') no-repeat center top
+        background-size cover
+        padding 60px 0px 80px
+        &:after
+            content ""
+            width 0
+            height 0
+            border-style solid
+            border-width 0 120px 60px 0px
+            border-color transparent transparent #ffffff transparent
+            position absolute
+            bottom 0
+            left 50%
+            margin-left -400px
+    &__foto
+        color #fff
+        width 355px
+        img
+            padding-left 20px
+            margin-bottom 40px
+        &__name
+            font-family 'pf_din_text_comp_proregular'
+            background $colorGreen
+            padding 5px 20px
+            font-size 22px
+            text-transform uppercase
+        &__stats
+            color #000
+            background rgba(255,255,255,.5)
+            padding 5px 20px
+            font-size 12px
+            font-family 'Open Sans'
+            text-align justify
+    &__curs
+        color #fff
+        width 360px
+        &__date
+            strong
+                font-family 'pf_din_text_comp_proregular'
+                font-weight 100
+                padding 5px 15px
+                background-color $colorBlue
+                font-size 41px
+                margin-right 33px
+            span
+                font-family 'pfdintextcomppro-bold'
+                color #575756
+                font-size 18px
+                position relative
+                top 5px
+        &__title
+            background-color $colorGreen
+            padding 10px
+            text-transform uppercase
+            font-family 'Open Sans'
+            font-weight bold
+            font-size 26px
+        &__price
+            margin-top 30px
+            background-color #575756
+            padding 10px
+            font-family 'pf_din_text_comp_proregular'
+            font-size 15px
+            text-transform uppercase
+            td
+                padding-right 30px
+                padding-top 10px
+                vertical-align bottom
+                i.fa
+                    font-size 15px
+            tr:last-child
+                color $colorBlue
+            td:last-child
+                font-size 30px
+                line-height 30px
+    &__prog
+        width 100%
+        position relative
+        background-color #fff
+        color $colorBlack
+        padding 40px 0px
+        &__header
+            h3
+                font-family 'pf_din_text_comp_proregular'
+                font-size 31px
+                position relative
+                &:after
+                    content ''
+                    display block
+                    position relative
+                    width 44px
+                    height 1px
+                    background-color $colorDarkGray
+                    margin 15px 0px 25px
+        &__name
+            font-family 'pfdintextcomppro-bold'
+            text-transform uppercase
+            font-size 16px
+            color $colorDarkGray
+        &__info
+            font-size 18px
+            font-family 'Open Sans'
+            > ul
+                padding 0
+                padding-left 20px
+                position relative
+                &:before
+                    content ''
+                    position absolute
+                    left 0px
+                    top 10px
+                    width 0
+                    height calc(100% - 15px)
+                    border-left 1px dashed $colorBlue
+                li
+                    margin-bottom 20px
+                    padding 0
+                    position relative
+                    &:before
+                        content ""
+                        width 10px
+                        height 10px
+                        border-radius 50%
+                        display block
+                        background-color $colorBlue
+                        position absolute
+                        left -25px
+                        top 8px
+                        box-shadow 0px 0px 0px 5px rgba(60, 180, 231, 0.51)
+                .operation
+                    font-family 'pf_dindisplay_promedium'
+                    text-transform uppercase
+                    font-size 16px
+                    color #fff
+                    background-color $colorBlue
+                    border-radius 50px
+                    display inline
+                    padding 5px 45px
+                    left -30px
+                    &:before
+                        box-shadow none
+                        background-color #fff
+                        left 10px
+                        top 10px
+#allfour.content__block
+    color #fff
+    .content__foto__stats
+        background none
+        color #fff
+    .double
+        padding-left 45px
+        .content__foto__name
+            position relative
+            left -45px
+            padding-left 45px
+        .content__foto__stats
+            text-align left
+            padding-left 0
+        &.pull-right
+            padding-left 0
+            padding-right 45px
+            .content__foto__name
+                left auto
+                right -45px
+                padding-right 45px
+            .content__foto__stats
+                text-align right
+                padding-right 0
+#fundations
+    .operation
+        display block
+        &:before
+            top 20px
+            width 15px
+            height 15px
+#methods
+    .content__curs__date strong
+        background-color $colorGreen
+        font-size 20px
+        padding-left 55px
+        text-transform uppercase
+        position relative
+        &:before
+            content ''
+            display block
+            width 68px
+            height 68px
+            background #fff url($pathImg + 'lekcia-icon.png') no-repeat center center
+            position absolute
+            border-radius 50%
+            top -30px
+            left -30px
+    .content__curs
+            width auto
+    .content__curs__price
+        width 360px
+    .content__curs__date
+        background-color $colorGreen
+        width 390px

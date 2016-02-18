@@ -1,0 +1,42 @@
+﻿@import "variables.styl"
+
+.anckers
+    min-width 100%
+    position fixed
+    z-index 100
+    top 60px
+    height 180px
+    background-color $colorGrayBg
+    padding 5px
+    &__item
+        width 20%
+        padding 8px 18px
+        font-family 'pf_din_text_comp_proregular'
+        cursor pointer
+        height 165px
+        font-size 18px
+        &:hover
+            background-color $colorGreen
+            color #fff
+            & *
+                color #fff
+            .anckers__author span
+                color $colorDarkGray
+            .anckers__date:after
+                background-color #fff
+    &__date
+        color $colorBlue
+        font-weight bold
+        &:after
+            content ''
+            display block
+            width 35px
+            height 3px
+            background-color $colorGreen
+            margin-bottom 12px
+    &__author
+        font-family 'pf_dindisplay_promedium'
+        color $colorDarkGray
+    &__spec
+        font-size 14px
+        color $colorGray

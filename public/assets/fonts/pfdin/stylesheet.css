@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'pf_dindisplay_proregular';
+    src: url('pfdindisplaypro-reg-webfont.eot');
+    src: url('pfdindisplaypro-reg-webfont.eot?#iefix') format('embedded-opentype'),
+        url('pfdindisplaypro-reg-webfont.woff2') format('woff2'),
+        url('pfdindisplaypro-reg-webfont.woff') format('woff'),
+        url('pfdindisplaypro-reg-webfont.ttf') format('truetype'),
+        url('pfdindisplaypro-reg-webfont.svg#pf_dindisplay_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'pf_din_text_comp_proregular';
+    src: url('pfdintextcomppro-regular_1-webfont.eot');
+    src: url('pfdintextcomppro-regular_1-webfont.eot?#iefix') format('embedded-opentype'),
+        url('pfdintextcomppro-regular_1-webfont.woff2') format('woff2'),
+        url('pfdintextcomppro-regular_1-webfont.woff') format('woff'),
+        url('ofont.ru_PF_Din_Text_Comp_Pro.ttf') format('truetype'),
+        url('pfdintextcomppro-regular_1-webfont.svg#pf_din_text_comp_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'pfdintextcomppro-bold';
+    src: url('pfdintextcomppro-bold.eot');
+    src: url('pfdintextcomppro-bold?#iefix') format('embedded-opentype'),
+        url('pfdintextcomppro-bold.woff2') format('woff2'),
+        url('pfdintextcomppro-bold.woff') format('woff'),
+        url('pfdintextcomppro-bold.ttf') format('truetype'),
+        url('pfdintextcomppro-bold.svg#pf_dindisplay_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pf_dindisplay_probold';
+    src: url('pfdindisplaypro-bold-webfont.eot');
+    src: url('pfdindisplaypro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('pfdindisplaypro-bold-webfont.woff2') format('woff2'),
+        url('pfdindisplaypro-bold-webfont.woff') format('woff'),
+        url('pfdindisplaypro-bold-webfont.ttf') format('truetype'),
+        url('pfdindisplaypro-bold-webfont.svg#pf_dindisplay_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'pf_din_text_comp_proXTh';
+    src: url('pfdintextcomppro-xthin_2-webfont.eot');
+    src: url('pfdintextcomppro-xthin_2-webfont.eot?#iefix') format('embedded-opentype'),
+        url('pfdintextcomppro-xthin_2-webfont.woff2') format('woff2'),
+        url('pfdintextcomppro-xthin_2-webfont.woff') format('woff'),
+        url('pfdintextcomppro-xthin_2-webfont.ttf') format('truetype'),
+        url('pfdintextcomppro-xthin_2-webfont.svg#pf_din_text_comp_proXTh') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'pf_dindisplay_promedium';
+    src: url('pfdindisplaypro-med-webfont.eot');
+    src: url('pfdindisplaypro-med-webfont.eot?#iefix') format('embedded-opentype'),
+        url('pfdindisplaypro-med-webfont.woff2') format('woff2'),
+        url('pfdindisplaypro-med-webfont.woff') format('woff'),
+        url('pfdintextcondpro-medium.ttf') format('truetype'),
+        url('pfdindisplaypro-med-webfont.svg#pf_dindisplay_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'pf_dindisplay_prolight';
+    src: url('pfdindisplaypro-light-webfont.eot');
+    src: url('pfdindisplaypro-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('pfdindisplaypro-light-webfont.woff2') format('woff2'),
+        url('pfdindisplaypro-light-webfont.woff') format('woff'),
+        url('pfdindisplaypro-light-webfont.ttf') format('truetype'),
+        url('pfdindisplaypro-light-webfont.svg#pf_dindisplay_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'pf_din_text_comp_prolight';
+    src: url('pfdintextcomppro-light_1-webfont.eot');
+    src: url('pfdintextcomppro-light_1-webfont.eot?#iefix') format('embedded-opentype'),
+        url('pfdintextcomppro-light_1-webfont.woff2') format('woff2'),
+        url('pfdintextcomppro-light_1-webfont.woff') format('woff'),
+        url('pfdintextcomppro-light_1-webfont.ttf') format('truetype'),
+        url('pfdintextcomppro-light_1-webfont.svg#pf_din_text_comp_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
