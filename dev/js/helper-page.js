@@ -14,7 +14,7 @@ function init(){
 			// Необходимо указать данный тип макета.
 			iconLayout: 'default#image',
 			// Своё изображение иконки метки.
-			iconImageHref: '/assets/img/map-label.png',
+			iconImageHref: '/landings/kursy-study/assets/img/map-label.png',
 			// Размеры метки.
 			iconImageSize: [84, 84],
 			// Смещение левого верхнего угла иконки относительно
@@ -68,7 +68,12 @@ var submitForm = function(){
 // DOM READY
 $(function () {
 	$(".fancy").fancybox({
-		openEffect: 'fade'
+		openEffect: 'fade',
+		helpers: {
+	    overlay: {
+	      		locked: false
+		    }
+		  }
 	});
 	ymaps.ready(init);
 	clickAnckers();

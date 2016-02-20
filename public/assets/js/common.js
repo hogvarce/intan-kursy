@@ -1,6 +1,6 @@
 /// <reference path="Framework/Events.ts" />
 requirejs.config({
-    baseUrl: '/assets/js/',
+    baseUrl: '/landings/kursy-study/assets/js/',
     paths: {
         jquery: '//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min',
         ymaps: '//api-maps.yandex.ru/2.1/?lang=ru_RU',

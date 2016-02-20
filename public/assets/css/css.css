@@ -12,21 +12,14 @@
 .header__licence {
   font-family: 'pf_dindisplay_promedium';
   font-size: 14px;
+  padding-left: 60px;
 }
 .header__register {
   margin-top: 5px;
+  padding-left: 60px;
 }
-.header__btn {
-  background-color: #009fe3;
-  color: #fff;
-  padding: 15px 30px;
-  text-transform: uppercase;
-  font-family: 'pfdintextcomppro-bold';
-  font-size: 18px;
-}
-.header__btn:hover,
-.header__btn:focus {
-  color: #fff;
+.header .btn {
+  margin-top: -8px;
 }
 .anckers {
   min-width: 100%;
@@ -80,7 +73,7 @@
 }
 .map {
   width: 100%;
-  min-width: 1100px;
+  min-width: 100%;
   position: relative;
 }
 .map__container,
@@ -99,17 +92,22 @@
 .map h2 {
   text-transform: uppercase;
   font-family: 'pf_din_text_comp_proregular';
+  letter-spacing: 1px;
 }
 .map__address {
   margin: 30px 0px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
 }
 .map__phone {
   font-weight: 600;
+  font-family: "Open Sans", sans-serif;
 }
 .footer {
   background-color: #fff;
   color: #000;
   padding: 25px 0 35px;
+  font-family: 'Open Sans', sans-serif;
 }
 .footer .pull-left a[target="_blank"] {
   color: #575756;
@@ -118,8 +116,14 @@
   top: 10px;
   left: 35px;
 }
+.footer .soc-icon {
+  opacity: 1;
+}
+.footer .soc-icon:hover {
+  opacity: 0.8;
+}
 .fancybox-close {
-  background: url("/assets/img/close.svg") no-repeat center !important;
+  background: url("/landings/kursy-study/assets/img/close.svg") no-repeat center !important;
   position: absolute !important;
   top: 20px !important;
   right: 20px !important;
@@ -165,6 +169,11 @@
   font-size: 16px;
   padding-right: 10px;
 }
+.modal-fancybox-body input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
 .modal-fancybox-body .input-checkbox {
   width: 20px;
   height: 20px;
@@ -185,7 +194,6 @@
   font-weight: normal;
 }
 .modal-fancybox .btn {
-  font-family: pf_din_text_comp_proregular;
   border-radius: 4px;
   background-color: #3cb4e7;
   box-shadow: 0px 5px 10px 0px rgba(255,255,255,0.15);
@@ -222,7 +230,7 @@
   min-width: 1200px;
   position: relative;
   min-height: 485px;
-  background: url("/assets/img/main-bg.png") no-repeat center top;
+  background: url("/landings/kursy-study/assets/img/main-bg.png") no-repeat center top;
   background-size: cover;
   padding: 60px 0px 80px;
 }
@@ -252,14 +260,15 @@
   padding: 5px 20px;
   font-size: 22px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .content__foto__stats {
   color: #000;
   background: rgba(255,255,255,0.5);
   padding: 5px 20px;
   font-size: 12px;
-  font-family: 'Open Sans';
-  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
 }
 .content__curs {
   color: #fff;
@@ -282,17 +291,18 @@
 }
 .content__curs__title {
   background-color: #8bc140;
-  padding: 10px;
+  padding: 10px 15px;
   text-transform: uppercase;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 26px;
 }
 .content__curs__price {
   margin-top: 30px;
-  background-color: #575756;
+  background-color: rgba(87,87,86,0.8);
   padding: 10px;
   font-family: 'pf_din_text_comp_proregular';
+  letter-spacing: 1px;
   font-size: 15px;
   text-transform: uppercase;
 }
@@ -300,9 +310,10 @@
   padding-right: 30px;
   padding-top: 10px;
   vertical-align: bottom;
+  font-size: 17px;
 }
 .content__curs__price td i.fa {
-  font-size: 15px;
+  font-size: 17px;
 }
 .content__curs__price tr:last-child {
   color: #009fe3;
@@ -316,12 +327,13 @@
   position: relative;
   background-color: #fff;
   color: #000;
-  padding: 40px 0px;
+  padding: 75px 0px;
 }
 .content__prog__header h3 {
   font-family: 'pf_din_text_comp_proregular';
   font-size: 31px;
   position: relative;
+  margin-top: 0;
 }
 .content__prog__header h3:after {
   content: '';
@@ -340,7 +352,7 @@
 }
 .content__prog__info {
   font-size: 18px;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
 }
 .content__prog__info > ul {
   padding: 0;
@@ -393,9 +405,20 @@
 #allfour.content__block {
   color: #fff;
 }
-#allfour.content__block .content__foto__stats {
-  background: none;
-  color: #fff;
+#allfour.content__block .content__curs__price {
+  text-align: left;
+}
+#allfour.content__block .content__curs {
+  width: 400px;
+}
+#allfour.content__block .content__curs__date strong {
+  margin-right: 80px;
+}
+#allfour.content__block .content__curs__date span {
+  right: 10px;
+}
+#allfour.content__block .content__prog__info > ul:before {
+  height: calc(100% - 45px);
 }
 #allfour.content__block .double {
   padding-left: 45px;
@@ -407,7 +430,6 @@
 }
 #allfour.content__block .double .content__foto__stats {
   text-align: left;
-  padding-left: 0;
 }
 #allfour.content__block .double.pull-right {
   padding-left: 0;
@@ -420,7 +442,6 @@
 }
 #allfour.content__block .double.pull-right .content__foto__stats {
   text-align: right;
-  padding-right: 0;
 }
 #fundations .operation {
   display: block;
@@ -431,18 +452,19 @@
   height: 15px;
 }
 #methods .content__curs__date strong {
-  background-color: #8bc140;
+  background-color: transparent;
   font-size: 20px;
   padding-left: 55px;
   text-transform: uppercase;
   position: relative;
+  top: 5px;
 }
 #methods .content__curs__date strong:before {
   content: '';
   display: block;
   width: 68px;
   height: 68px;
-  background: #fff url("/assets/img/lekcia-icon.png") no-repeat center center;
+  background: #fff url("/landings/kursy-study/assets/img/lekcia-icon.png") no-repeat center center;
   position: absolute;
   border-radius: 50%;
   top: -30px;
@@ -457,6 +479,35 @@
 #methods .content__curs__date {
   background-color: #8bc140;
   width: 390px;
+}
+@media all and (-ms-high-contrast: none) {
+  .content__curs__date span {
+    font-size: 14px;
+  }
+  .modal-fancybox .btn {
+    font-size: 16px;
+  }
+}
+@supports (overflow: -webkit-marquee) and (justify-content: inherit) {
+  .content__curs__date span {
+    font-size: 14px;
+  }
+  .anckers {
+    height: 200px;
+  }
+  .anckers__item {
+    height: 190px;
+  }
+  .content__curs__date strong {
+    font-size: 36px;
+  }
+  .content__curs__price td,
+  .content__curs__price {
+    font-size: 11px;
+  }
+  .modal-fancybox .btn {
+    font-size: 16px;
+  }
 }
 * {
   margin: 0;
@@ -489,10 +540,12 @@ a:focus {
 .btn {
   background-color: #009fe3;
   color: #fff;
-  padding: 15px 30px;
+  padding: 7px 39px;
   text-transform: uppercase;
   font-family: 'pfdintextcomppro-bold';
   font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 0;
 }
 .btn:hover,
 .btn:focus {
@@ -500,7 +553,7 @@ a:focus {
   text-decoration: underline;
 }
 .sert {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: #009fe3;
@@ -515,7 +568,7 @@ a:focus {
   display: block;
   width: 34px;
   height: 39px;
-  background: url("/assets/img/sert-icon.png") no-repeat center center;
+  background: url("/landings/kursy-study/assets/img/sert-icon.png") no-repeat center center;
   position: absolute;
   left: 0px;
   top: 0px;

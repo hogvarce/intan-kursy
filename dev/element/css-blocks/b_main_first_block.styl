@@ -38,13 +38,14 @@
             padding 5px 20px
             font-size 22px
             text-transform uppercase
+            letter-spacing 1px
         &__stats
             color #000
             background rgba(255,255,255,.5)
             padding 5px 20px
             font-size 12px
-            font-family 'Open Sans'
-            text-align justify
+            font-family 'Open Sans', sans-serif
+            text-align left
     &__curs
         color #fff
         width 360px
@@ -64,24 +65,26 @@
                 top 5px
         &__title
             background-color $colorGreen
-            padding 10px
+            padding 10px 15px
             text-transform uppercase
-            font-family 'Open Sans'
+            font-family 'Open Sans', sans-serif
             font-weight bold
             font-size 26px
         &__price
             margin-top 30px
-            background-color #575756
+            background-color rgba(87, 87, 86, 0.8)
             padding 10px
             font-family 'pf_din_text_comp_proregular'
+            letter-spacing 1px
             font-size 15px
             text-transform uppercase
             td
                 padding-right 30px
                 padding-top 10px
                 vertical-align bottom
+                font-size 17px
                 i.fa
-                    font-size 15px
+                    font-size 17px
             tr:last-child
                 color $colorBlue
             td:last-child
@@ -92,12 +95,13 @@
         position relative
         background-color #fff
         color $colorBlack
-        padding 40px 0px
+        padding 75px 0px
         &__header
             h3
                 font-family 'pf_din_text_comp_proregular'
                 font-size 31px
                 position relative
+                margin-top 0
                 &:after
                     content ''
                     display block
@@ -113,7 +117,7 @@
             color $colorDarkGray
         &__info
             font-size 18px
-            font-family 'Open Sans'
+            font-family 'Open Sans', sans-serif
             > ul
                 padding 0
                 padding-left 20px
@@ -158,9 +162,16 @@
                         top 10px
 #allfour.content__block
     color #fff
-    .content__foto__stats
-        background none
-        color #fff
+    .content__curs__price
+        text-align left
+    .content__curs
+        width 400px
+    .content__curs__date strong
+        margin-right 80px
+    .content__curs__date span
+        right 10px
+    .content__prog__info > ul:before
+        height calc(100% - 45px)
     .double
         padding-left 45px
         .content__foto__name
@@ -169,7 +180,6 @@
             padding-left 45px
         .content__foto__stats
             text-align left
-            padding-left 0
         &.pull-right
             padding-left 0
             padding-right 45px
@@ -179,7 +189,6 @@
                 padding-right 45px
             .content__foto__stats
                 text-align right
-                padding-right 0
 #fundations
     .operation
         display block
@@ -189,11 +198,12 @@
             height 15px
 #methods
     .content__curs__date strong
-        background-color $colorGreen
+        background-color transparent
         font-size 20px
         padding-left 55px
         text-transform uppercase
         position relative
+        top 5px
         &:before
             content ''
             display block
@@ -211,3 +221,23 @@
     .content__curs__date
         background-color $colorGreen
         width 390px
+
+@media all and (-ms-high-contrast:none)
+    .content__curs__date span
+        font-size 14px
+    .modal-fancybox .btn
+        font-size 16px
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+    .content__curs__date span
+        font-size 14px
+    .anckers
+        height 200px
+        &__item
+            height 190px
+    .content__curs__date strong
+        font-size 36px
+    .content__curs__price td,
+    .content__curs__price
+        font-size 11px
+    .modal-fancybox .btn
+        font-size 16px
